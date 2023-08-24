@@ -1,19 +1,18 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-
-
-
 <!-- link for live view -->
 
 # [check it out live](https://tender-soko.vercel.app/)
-
-
 
 <!-- project image -->
 
 ![project image](./public/liveproject.png)
 
 ## Getting Started
+
+# Description
+
+## This project is a tender sale website, where users can buy and sell tenders.
 
 First, run the development server:
 
@@ -25,6 +24,21 @@ yarn dev
 pnpm dev
 
 ```
+
+<!-- stack used -->
+
+## Stack used
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://reactjs.org/)
+
+- [Shadcn ui components](https://ui.shadcn.com/)
+- [Vercel](https://vercel.com/)
+- zustate for state management
+
+<!-- line -->
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
