@@ -11,7 +11,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 <!-- project image -->
 
-![project image](../tendersale/public/liveproject.png)
+![project image](./public/liveproject.png)
 
 ## Getting Started
 
