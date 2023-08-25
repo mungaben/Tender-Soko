@@ -29,7 +29,7 @@ export default function Home() {
         <div className=" justify-center items-center flex w-full flex-col gap-10">
           <div className="  underline  md:text-9xl text-4xl text-center transition-all duration-500 delay-700 ">
             <h1 className=" bg-clip-text text-transparent bg-gradient-to-r from-primary/10 via-rose-600/100 to-destructive/50">
-              Tender Soko
+              Tender Legit
             </h1>
            
           </div>
