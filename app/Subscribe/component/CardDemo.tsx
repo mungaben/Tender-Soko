@@ -19,6 +19,7 @@ import { Switch } from "@/components/ui/switch"
 import { Checkbox } from "@/components/ui/checkbox"
 import { useState } from "react"
 import { set } from "sanity"
+import Buy from "./BuySubscription/Buy"
 
 
 interface Notification {
@@ -89,8 +90,7 @@ export function CardDemo({ className, notifications, ...props }: CardDemoProps) 
             </CardContent>
             <CardFooter>
                 <Button className="w-full"  onClick={handleSubscribe}>
-                    <Check className="mr-2 h-4 w-4" /> Subscribe
-                </Button>
+                    <Check className="mr-2 h-4 w-4" />  <Buy subscription="standnd" price="900"/>  </Button>
             </CardFooter>
         </Card>
     )
