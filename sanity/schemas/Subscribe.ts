@@ -42,6 +42,7 @@ export default defineType({
             title: 'Card Title 2',
             type: 'string',
         }),
+        
     ],
         // preview
         preview: {
