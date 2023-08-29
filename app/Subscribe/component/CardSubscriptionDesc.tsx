@@ -76,8 +76,8 @@ const CardSubscriptionDesc = () => {
                 <CardContent>
                     <div className=' text-xs'>
                         {
-                            procurementData.map((item, index) => <div>
-                                <div className=' flex flex-row items-center justify-center  pl-2 space-x-4'>
+                            procurementData.map((item, index) => <div key={index}>
+                                <div  className=' flex flex-row items-center justify-center  pl-2 space-x-4'>
 
 
                                     <p className='text-xs leading-snug  text-start  text-gray-500/50 '>{index + 1}. {item.description}</p></div>
