@@ -1,7 +1,7 @@
 
 
 
-
+"use client"
 
 import React from 'react'
 
@@ -14,6 +14,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { CardDemo } from './CardDemo'
+import { motion, useScroll } from 'framer-motion'
 
 
 const PackageCard = () => {
@@ -68,20 +69,30 @@ const PackageCard = () => {
     },
 
   ]
+  const { scrollYProgress } = useScroll();
   return (
-    <div className=' h-[80vh] overflow-scroll ' >
-
-
-
-      <div className='  mx-auto grid gap-4  grid-cols-1 md:grid-cols-2 lg:grid-cols-3  justify-center items-center 2xl:grid-cols-3 first:ml-4 place-content-center justify-items-center '>
+    <div className=' h-[80vh]  overflow-x-auto  ' >
 
 
 
 
-        <CardDemo notifications={notifications} className=' flex flex-col items-center justify-center w-[75vw] md:w-[40vw] lg:w-[25vw] xl:-w-[20vw] ' />
-        <CardDemo notifications={notifications} className=' flex flex-col items-center justify-center  w-[75vw] md:w-[40vw] lg:w-[25vw] xl:-w-[20vw]   ' />
-        <CardDemo notifications={notifications} className=' flex flex-col items-center justify-center w-[75vw] md:w-[40vw] lg:w-[25vw] xl:-w-[20vw]   ' />
-        <CardDemo notifications={notifications} className=' flex flex-col items-center justify-center w-[75vw] md:w-[40vw] lg:w-[25vw] xl:-w-[20vw]  ' />
+
+      <div className='  overflow-scroll mx-auto grid gap-4  grid-cols-1 md:grid-cols-2 lg:grid-cols-4  justify-center items-center 2xl:grid-cols-4 first:ml-4 place-content-center justify-items-center  pt-10'>
+
+
+        {/* <div className=' bg-red-400  mt-0 fixed w-full  mx-auto top-0' >
+          <motion.div
+            className=" w-full h-2 bg-red-800"
+            style={{ scaleX: scrollYProgress }}
+          />
+
+        </div> */}
+
+
+        <CardDemo notifications={notifications} className=' flex flex-col items-center justify-center w-[60dvw] md:w-[35dvw] lg:w-[20vw] xl:-w-[15dvw] ' />
+        <CardDemo notifications={notifications} className=' flex flex-col items-center justify-center  w-[60dvw] md:w-[35dvw] lg:w-[20vw] xl:-w-[15dvw]   ' />
+        <CardDemo notifications={notifications} className=' flex flex-col items-center justify-center w-[60dvw] md:w-[35dvw] lg:w-[20vw] xl:-w-[15dvw]   ' />
+        <CardDemo notifications={notifications} className=' flex flex-col items-center justify-center w-[60dvw] md:w-[35dvw] lg:w-[20vw] xl:-w-[15dvw]  ' />
 
 
 

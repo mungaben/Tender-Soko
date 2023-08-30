@@ -1,6 +1,6 @@
 
 
-
+"use client"
 
 
 import React from 'react'
@@ -8,6 +8,7 @@ import React from 'react'
 
 import Image from "next/image";
 import Link from "next/link";
+import { SwiperSlide } from 'swiper/react';
 
 type Props = {
   title: string;
@@ -19,7 +20,12 @@ type Props = {
 
 const TestMonialCard =(props: Props) => {
   return (
-    <div className="py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+    <SwiperSlide className="py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+       {({ isActive }) => (
+        <div>
+          {isActive ? 'active' : 'not active'}
+
+        
       <div className="flex justify-center md:justify-end -mt-16">
         <Image
           alt={props.author}
@@ -38,7 +44,9 @@ const TestMonialCard =(props: Props) => {
           {props.author}
         </Link>
       </div>
-    </div>
+      </div>
+        )}
+    </SwiperSlide>
   )
 }
 

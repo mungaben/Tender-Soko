@@ -17,9 +17,11 @@ import {
 import { Separator } from "@/components/ui/separator"
 import { Switch } from "@/components/ui/switch"
 import { Checkbox } from "@/components/ui/checkbox"
-import { useState } from "react"
+import { useRef, useState } from "react"
 import { set } from "sanity"
 import Buy from "./BuySubscription/Buy"
+import { motion } from "framer-motion"
+import { useInView } from "react-intersection-observer"
 
 
 interface Notification {
@@ -35,6 +37,7 @@ interface CardDemoProps {
 type CardProps = React.ComponentProps<typeof Card>
 
 export function CardDemo({ className, notifications, ...props }: CardDemoProps) {
+    const ref=useRef(null)
 
     const [emailme, setemailme] = useState(false)
 
@@ -49,15 +52,31 @@ export function CardDemo({ className, notifications, ...props }: CardDemoProps) 
 
     const handleSubscribe = () => {
         console.log("handleSubscribe")
+        const { ref,inView}=useInView({
+            threshold:0.5
+        })
     }
+    
     return (
+        <motion.div ref={ref} 
+        animate={{scale:1}}
+        transition={{duration:1,delay:0.5}}
+        className={` w-full flex justify-center`}
+        >
         <Card className={cn("", className)} {...props}>
             <CardHeader>
                 <CardTitle className=" uppercase">Standard</CardTitle>
-                <CardDescription>Receive 4 benefits.</CardDescription>
+                <CardDescription>
+               
+                    <h1>
+                    Receive 4 benefits.
+
+                    </h1>
+                    
+                    </CardDescription>
             </CardHeader>
             <CardContent className="grid gap-4">
-                <div className=" flex items-center space-x-4 rounded-md border p-4">
+                <div className=" flex items-center  md:space-x-4 rounded-md border p-2">
                     <Mail />
                     <div className="flex-1 space-y-1">
                         <p className="text-sm font-medium leading-none  flex flex-wrap justify-center items-center">
@@ -89,9 +108,10 @@ export function CardDemo({ className, notifications, ...props }: CardDemoProps) 
                 </div>
             </CardContent>
             <CardFooter>
-                <Button className="w-full"  onClick={handleSubscribe}>
+                <Button className="w-full ml-4"  onClick={handleSubscribe}>
                     <Check className="mr-2 h-4 w-4" />  <Buy subscription="standnd" price="900"/>  </Button>
             </CardFooter>
         </Card>
+       </motion.div>
     )
 }

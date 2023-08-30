@@ -24,7 +24,7 @@ const page = () => {
         <PackageCard />
       </div>
       <div>
-        <TestMonyMainCard/>
+        {/* <TestMonyMainCard/> */}
       </div>
 
     </div>
