@@ -8,8 +8,8 @@ import Themechanger from './components/ThemesChanger'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Tender Soko',
-  description: 'tender soko  check available tenders',
+  title: 'Tender legit || home page',
+  description: 'tender legit  check available tenders',
 }
 
 export default function RootLayout({

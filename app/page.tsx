@@ -7,8 +7,25 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 ">
-      <motion.div className="z-10 max-w-5xl w-full  items-center justify-between font-mono text-sm lg:flex flex-col gap-10 "
+    <main className="flex min-h-screen flex-col items-center justify-between  relative ">
+      <div className=" absolute  w-full flex flex-col h-full z-20  gap-4">
+        <div className=" shadow-lg  w-full h-1/2 rounded-b-full  "> 
+
+        </div>
+        <div className="  shadow-2xl -mt-10   w-full h-1/2 rounded-t-full bg-[url('/Shulemax2.png')] mb-5">
+          {/* <Image
+          src="/Shulemax2.png"
+          alt="Picture of the author"
+          layout="fill"
+          objectFit="cover"
+          className="rounded-t-full bg-[url('/Shulemax2.png')]"
+          /> */}
+ 
+
+        </div>
+
+      </div>
+      <motion.div className="max-w-5xl w-full   items-center justify-between font-mono text-sm lg:flex flex-col gap-10 z-30 mt-10 "
         initial={{
           opacity: 0,
           x: -100,
