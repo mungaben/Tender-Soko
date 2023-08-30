@@ -52,7 +52,7 @@ const CardSubscriptionDesc = () => {
             <Card className=' w-full shadow-none  rounded-none border-none'>
                 <CardHeader>
                     <CardTitle>
-                        <h1 >
+                        <h1 className=' hover:underline text-6xl font-[1000]' >
                             <Label>
                                 Subscription Benefits
                             </Label>

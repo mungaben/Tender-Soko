@@ -37,8 +37,11 @@ interface CardDemoProps {
 type CardProps = React.ComponentProps<typeof Card>
 
 export function CardDemo({ className, notifications, ...props }: CardDemoProps) {
-    const ref=useRef(null)
+    const refs=useRef(null)
 
+    const { ref,inView}=useInView({
+        threshold:0.5
+    })
     const [emailme, setemailme] = useState(false)
 
 
@@ -52,9 +55,7 @@ export function CardDemo({ className, notifications, ...props }: CardDemoProps) 
 
     const handleSubscribe = () => {
         console.log("handleSubscribe")
-        const { ref,inView}=useInView({
-            threshold:0.5
-        })
+    
     }
     
     return (
