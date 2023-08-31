@@ -20,13 +20,15 @@ import {
     MenubarSubTrigger,
     MenubarTrigger,
   } from "@/components/ui/menubar"
+import { Button } from '../ui/button'
+import Link from 'next/link'
 
 const TenderDrop = () => {
   return (
     <div>
         <Menubar>
       <MenubarMenu>
-        <MenubarTrigger>File</MenubarTrigger>
+        <MenubarTrigger>Tenders</MenubarTrigger>
         <MenubarContent>
           <MenubarItem>
             New Tab <MenubarShortcut>⌘T</MenubarShortcut>
@@ -34,14 +36,16 @@ const TenderDrop = () => {
           <MenubarItem>
             New Window <MenubarShortcut>⌘N</MenubarShortcut>
           </MenubarItem>
-          <MenubarItem disabled>New Incognito Window</MenubarItem>
+          <MenubarItem disabled><Button><Link href="/Subscribe"> Subscribe</Link></Button></MenubarItem>
           <MenubarSeparator />
           <MenubarSub>
-            <MenubarSubTrigger>Share</MenubarSubTrigger>
+            <MenubarSubTrigger>tender</MenubarSubTrigger>
             <MenubarSubContent>
-              <MenubarItem>Email link</MenubarItem>
-              <MenubarItem>Messages</MenubarItem>
-              <MenubarItem>Notes</MenubarItem>
+              <MenubarItem>
+                
+              </MenubarItem>
+              <MenubarItem>NGO's</MenubarItem>
+              <MenubarItem>Private</MenubarItem>
             </MenubarSubContent>
           </MenubarSub>
           <MenubarSeparator />
