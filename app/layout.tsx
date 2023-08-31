@@ -11,6 +11,13 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Tender legit || home page',
   description: 'tender legit  check available tenders',
+  // favicon
+  icons: {
+    icon: '/faviicon2.png',
+  }
+
+
+
 }
 
 export default function RootLayout({
