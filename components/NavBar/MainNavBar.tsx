@@ -61,7 +61,7 @@ const MainNavBar = () => {
             <div
               className={`flex md:flex-row flex-col justify-between md:space-x-2 space-y-5 ml-5 md:ml-0  `}
             >
-              <div className=" flex justify-center items-center   mt-4 ">
+              <div className=" flex justify-center items-start   mt-4 ">
                 <Search />
               </div>
               <div className=" flex justify-center items-center">
