@@ -45,20 +45,20 @@ const Search = () => {
     }
 
     return (
-        <div className=' flex justify-center items-center p-2'>
+        <div className=' flex justify-center items-center   '>
 
 
 
 
             <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className=" space-y-6  flex flex-row justify-center items-center  w-full">
+                <form onSubmit={form.handleSubmit(onSubmit)} className=" space-y-6  flex flex-row justify-center items-center  flex-1    w-full">
                     <FormField
                         control={form.control}
                         name="username"
                         render={({ field }) => (
                             <FormItem>
                             
-                                <FormControl className=' w-full' >
+                                <FormControl className=' w-full  flex flex-1  min-w-full'  >
                                     <Input placeholder="shadcn" {...field} />
                                 </FormControl>
                               

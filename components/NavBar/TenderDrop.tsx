@@ -21,8 +21,8 @@ import Link from "next/link";
 
 const TenderDrop = () => {
   return (
-    <div>
-      <Menubar>
+    <div className="" >
+      <Menubar className=" flex-col flex md:flex-row h-full border-none">
         <MenubarMenu>
           <MenubarTrigger>Tenders</MenubarTrigger>
           <MenubarContent>

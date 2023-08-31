@@ -1,21 +1,15 @@
-
-
-
-
-
-
-import React from 'react'
-import { Button } from '../ui/button'
+import React from "react";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const SubscribeNav = () => {
   return (
     <div>
-      
-     <Button>
-         Subscribe
-     </Button>
+      <Button>
+        <Link href="/Subscribe">Subscribe</Link>
+      </Button>
     </div>
-  )
-}
+  );
+};
 
-export default SubscribeNav
+export default SubscribeNav;
