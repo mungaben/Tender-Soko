@@ -26,10 +26,10 @@ export default function RootLayout({
             <div className="overflow-x-hidden">
 
               <Themechanger />
-              <div>
+              <div className=' z-50'>
                 <MainNavBar />
               </div>
-              <div className=' mt-10'>
+              <div className=' mt-20'>
                 {children}
               </div>
 
