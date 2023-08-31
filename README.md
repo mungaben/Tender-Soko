@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 <!-- link for live view -->
 
-# [check it out live](https://tender-soko.vercel.app/)
+# [check it out live](https://tender-legit.vercel.app/)
 
 <!-- project image -->
 
