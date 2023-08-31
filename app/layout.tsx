@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Providers from './components/ThemesProvider'
 import Themechanger from './components/ThemesChanger'
+import MainNavBar from '@/components/NavBar/MainNavBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,16 +20,24 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-    <html lang="en">
-      <body className={inter.className}>
-      <Providers>
-          <div className="overflow-x-hidden">
-            <Themechanger />
-            {children}
-          </div>
-        </Providers>
-      </body>
-    </html>
+      <html lang="en">
+        <body className={inter.className}>
+          <Providers>
+            <div className="overflow-x-hidden">
+
+              <Themechanger />
+              <div>
+                <MainNavBar />
+              </div>
+              <div className=' mt-10'>
+                {children}
+              </div>
+
+
+            </div>
+          </Providers>
+        </body>
+      </html>
     </ClerkProvider>
   )
 }
