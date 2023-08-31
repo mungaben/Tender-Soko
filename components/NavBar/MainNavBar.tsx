@@ -13,8 +13,8 @@ import NavUser from './NavUser'
 
 const MainNavBar = () => {
     return (
-        <div className=' w-full fixed top-0 mb-5'>
-            <div className=' flex flex-row    '>
+        <div className=' w-full fixed top-0 mb-5 '>
+            <div className=' flex flex-row  justify-between  mx-4  '>
                 {/* logo */}
                 <div className='flex justify-center items-center '>
                     <LogoImage />
