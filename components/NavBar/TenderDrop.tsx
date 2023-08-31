@@ -27,10 +27,10 @@ const TenderDrop = () => {
           <MenubarTrigger>Tenders</MenubarTrigger>
           <MenubarContent>
             <MenubarItem>
-              New Tab <MenubarShortcut>⌘T</MenubarShortcut>
+              Tender type<MenubarShortcut>20</MenubarShortcut>
             </MenubarItem>
             <MenubarItem>
-              New Window <MenubarShortcut>⌘N</MenubarShortcut>
+              Tender type <MenubarShortcut>30</MenubarShortcut>
             </MenubarItem>
             <MenubarItem disabled>
               <Button>
@@ -39,7 +39,7 @@ const TenderDrop = () => {
             </MenubarItem>
             <MenubarSeparator />
             <MenubarSub>
-              <MenubarSubTrigger>tender</MenubarSubTrigger>
+              <MenubarSubTrigger>Tender</MenubarSubTrigger>
               <MenubarSubContent>
                 <MenubarItem>
                   <Link href="/Tenders/Government">Government</Link>
@@ -81,6 +81,15 @@ const TenderDrop = () => {
             <MenubarItem>Paste</MenubarItem>
           </MenubarContent>
         </MenubarMenu>
+
+        <MenubarMenu>
+          <MenubarTrigger>Sectors</MenubarTrigger>
+          <MenubarContent>
+            <MenubarItem inset>Technology</MenubarItem>
+            <MenubarSeparator />
+            <MenubarItem inset>Agriculture</MenubarItem>
+          </MenubarContent>
+        </MenubarMenu>
         <MenubarMenu>
           <MenubarTrigger>Blogs</MenubarTrigger>
           <MenubarContent>
@@ -99,21 +108,6 @@ const TenderDrop = () => {
             <MenubarItem inset>Toggle Fullscreen</MenubarItem>
             <MenubarSeparator />
             <MenubarItem inset>Hide Sidebar</MenubarItem>
-          </MenubarContent>
-        </MenubarMenu>
-
-        <MenubarMenu>
-          <MenubarTrigger>Sectors</MenubarTrigger>
-          <MenubarContent>
-            <MenubarRadioGroup value="benoit">
-              <MenubarRadioItem value="andy">Andy</MenubarRadioItem>
-              <MenubarRadioItem value="benoit">Benoit</MenubarRadioItem>
-              <MenubarRadioItem value="Luis">Luis</MenubarRadioItem>
-            </MenubarRadioGroup>
-            <MenubarSeparator />
-            <MenubarItem inset>Edit...</MenubarItem>
-            <MenubarSeparator />
-            <MenubarItem inset>Add Profile...</MenubarItem>
           </MenubarContent>
         </MenubarMenu>
       </Menubar>
