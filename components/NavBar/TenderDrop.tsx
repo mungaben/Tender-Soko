@@ -21,7 +21,7 @@ import Link from "next/link";
 
 const TenderDrop = () => {
   return (
-    <div className="" >
+    <div >
       <Menubar className=" flex-col flex md:flex-row h-full border-none">
         <MenubarMenu>
           <MenubarTrigger>Tenders</MenubarTrigger>
@@ -59,10 +59,10 @@ const TenderDrop = () => {
           <MenubarTrigger>Projects</MenubarTrigger>
           <MenubarContent>
             <MenubarItem>
-              Undo <MenubarShortcut>⌘Z</MenubarShortcut>
+              Undo <MenubarShortcut>Z</MenubarShortcut>
             </MenubarItem>
             <MenubarItem>
-              Redo <MenubarShortcut>⇧⌘Z</MenubarShortcut>
+              Redo <MenubarShortcut>Z</MenubarShortcut>
             </MenubarItem>
             <MenubarSeparator />
             <MenubarSub>
@@ -99,10 +99,10 @@ const TenderDrop = () => {
             </MenubarCheckboxItem>
             <MenubarSeparator />
             <MenubarItem inset>
-              Reload <MenubarShortcut>⌘R</MenubarShortcut>
+              Reload <MenubarShortcut>R</MenubarShortcut>
             </MenubarItem>
             <MenubarItem disabled inset>
-              Force Reload <MenubarShortcut>⇧⌘R</MenubarShortcut>
+              Force Reload <MenubarShortcut>R</MenubarShortcut>
             </MenubarItem>
             <MenubarSeparator />
             <MenubarItem inset>Toggle Fullscreen</MenubarItem>
