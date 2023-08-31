@@ -1,15 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
-import Search from "./Search";
-import LogoImage from "./LogoImage";
-import TrialMenuBar from "./TrialMenuBar";
-import TenderDrop from "./TenderDrop";
-import SubscribeNav from "./SubscribeNav";
-import NavUser from "./NavUser";
 import { DragHandleHorizontalIcon } from "@radix-ui/react-icons";
-import { Toggle } from "../ui/toggle";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { Toggle } from "../ui/toggle";
+import NavUser from "./NavUser";
+import Search from "./Search";
+import SubscribeNav from "./SubscribeNav";
+import TenderDrop from "./TenderDrop";
 const MainNavBar = () => {
   
   const [toggle, setToggle] = useState(true);
