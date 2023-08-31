@@ -29,7 +29,7 @@ export default function RootLayout({
               <div>
                 <MainNavBar />
               </div>
-              <div className=' mt-10'>
+              <div className=' mt-20'>
                 {children}
               </div>
 
