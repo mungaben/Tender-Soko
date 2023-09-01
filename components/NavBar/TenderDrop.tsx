@@ -45,7 +45,7 @@ const TenderDrop = () => {
                   <Link href="/Tenders/Government">Government</Link>
                 </MenubarItem>
                 <MenubarItem>
-                  <Link href="/Tenders/Ngos">NGO's</Link>
+                  <Link href="/Tenders/NGO">NGO's</Link>
                 </MenubarItem>
                 <MenubarItem>
                   <Link href="/Tenders/Private">Private</Link>
@@ -55,7 +55,7 @@ const TenderDrop = () => {
             <MenubarSeparator />
           </MenubarContent>
         </MenubarMenu>
-        <MenubarMenu>
+        {/* <MenubarMenu>
           <MenubarTrigger>Projects</MenubarTrigger>
           <MenubarContent>
             <MenubarItem>
@@ -80,7 +80,7 @@ const TenderDrop = () => {
             <MenubarItem>Copy</MenubarItem>
             <MenubarItem>Paste</MenubarItem>
           </MenubarContent>
-        </MenubarMenu>
+        </MenubarMenu> */}
 
         <MenubarMenu>
           <MenubarTrigger>Sectors</MenubarTrigger>

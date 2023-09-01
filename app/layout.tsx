@@ -29,7 +29,7 @@ export default function RootLayout({
           <Providers>
             <div className="overflow-x-hidden">
               <Themechanger />
-              <div className=" z-50">
+              <div className=" z-50 mb-4 bg-secondary-foreground">
                 <MainNavBar />
               </div>
               <div className=" mt-20">{children}</div>
