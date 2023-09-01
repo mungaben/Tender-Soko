@@ -45,7 +45,7 @@ const Search = () => {
     }
 
     return (
-        <div className=' flex justify-center items-center   '>
+        <div className=' flex justify-center items-center lg:w-full bg-red-500    '>
 
 
 
@@ -59,7 +59,7 @@ const Search = () => {
                             <FormItem>
                             
                                 <FormControl className=' w-full  flex flex-1  min-w-full'  >
-                                    <Input placeholder="shadcn" {...field} />
+                                    <Input placeholder=" search for tenders" {...field} className=' w-full' />
                                 </FormControl>
                               
                              
