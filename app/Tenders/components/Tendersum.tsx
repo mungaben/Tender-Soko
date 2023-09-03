@@ -37,7 +37,7 @@ const Tendersum = async () => {
     return (
         <div className=" flex flex-col gap-5 overflow-y-scroll mx-5 max-h-[80dvh] justify-center items-center">
             {tenders.map((data: Tender, index: any) => (
-                <Card className="  ">
+                <Card key={index} className="  ">
                     <div >
                         {data.sponsored ? (
                             <div className=" flex items-center justify-start md:ml-4 md:p-3 mx-8  ">

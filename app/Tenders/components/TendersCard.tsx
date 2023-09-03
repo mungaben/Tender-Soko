@@ -1,18 +1,12 @@
-
-
-
-
-
-import React from 'react'
-import Tendersum from './Tendersum'
+import React from "react";
+import Tendersum from "./Tendersum";
 
 const TendersCard = () => {
   return (
     <div>
-      Tenders CARD
-      <Tendersum/>
+      <Tendersum />
     </div>
-  )
-}
+  );
+};
 
-export default TendersCard
+export default TendersCard;
