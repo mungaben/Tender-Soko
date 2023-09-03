@@ -15,7 +15,7 @@ type HandleToogleProps = {
 };
 
 const HandleToogle = () => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
 
   const handleToggle = () => {
     console.log("toggle");
