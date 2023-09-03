@@ -59,7 +59,7 @@ const Search = () => {
                             <FormItem>
                             
                                 <FormControl className=' w-full  flex flex-1  min-w-full'  >
-                                    <Input placeholder="shadcn" {...field} />
+                                    <Input placeholder=" Search Tenders ..." {...field} />
                                 </FormControl>
                               
                              
